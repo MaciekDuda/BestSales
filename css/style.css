@@ -16,5 +16,5 @@
 
 .container {
     width: 1352px;
-    display: flex;
+    margin: 0;
 }
