@@ -18,3 +18,46 @@
     width: 1352px;
     margin: 0;
 }
+
+.header {
+    height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    color: var(--color-primary);
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.nav__element {
+
+}
+
+.nav__link {
+    color: var(--color-grey);
+    font-family: var(--font-open-sans);
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    letter-spacing: 0.1875rem;
+}
+
+.nav__link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
