@@ -9,6 +9,7 @@
     --color-white: #ffffff;
     --color-grey: #a5a5a5;
     --color-light-grey: #f7f7f7;
+    --button-radius: 35px;
 }
 
 * {
@@ -25,7 +26,7 @@ a {
 
 .container {
     width: 1352px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* HEADER SECTION */
@@ -123,8 +124,8 @@ a {
 }
 
 .banner__image {
-    width: 100vw;
-    height: 594px;
+    width: 100%;
+    height: auto;
 }
 
 /* STATISTICS SECTION */
@@ -141,6 +142,7 @@ a {
 h2 {
     font-family: var(--font-raleway);
     font-size: 2.25rem;
+    text-align: center;
 
 }
 .statistics__single {
@@ -399,9 +401,9 @@ h2 {
     margin-bottom: 20px;
     font-size: 0.875rem;
 }
-.pricing__item::before { /* brak zielonego znaczka */
+.pricing__item::before {
     content: "";
-    background-image: url("../assets/Checkmark-1.svg");
+    background-image: url("../assets/Ckechmark-1.svg");
     display: inline-block;
     width: 11px;
     height: 11px;
@@ -569,3 +571,35 @@ h2 {
 
 /* FOOTER SECTION */
 
+.footer {
+    box-shadow: 0px -5px 40px #00000029;
+    background-color: var(--color-light-grey);
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.footer__copy {
+    font-size: 0.688rem;
+    color: var(--color-grey);
+    font-weight: 300;
+    line-height: 0.938rem;
+    margin-top: 6px;
+}
+
+.footer__icons img {
+    margin-right: 20px;
+}
+.footer__icons:last-child {
+    margin-right: 0;
+}
